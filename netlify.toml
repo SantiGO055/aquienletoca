@@ -1,0 +1,20 @@
+# Global settings applied to the whole site.
+# “base” is directory to change to before starting build, and
+# “publish” is the directory to publish (relative to root of your repo).
+# “command” is your build command.
+
+[build]
+  base    = "/"
+  publish = "dist/aquienletoca"
+  command = "npm run config -- --environment=prod && ng build"
+
+[config]
+  command = "ts-node ./src/assets/scripts/setEnv.ts"
+
+[start]
+  command = "npm run config -- --environment=dev &&  ng serve"
+
+[[redirects]]
+  from = "/*"
+  to = "index.html"
+  status = 200
