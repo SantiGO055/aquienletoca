@@ -1,0 +1,6 @@
+{
+    "/": {
+        "target": "https://gfosdxjgzlvnnmjkvonb.supabase.co/rest/v1/",
+        "secure": false
+    }
+}
