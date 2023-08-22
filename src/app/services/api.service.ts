@@ -23,9 +23,9 @@ export class ApiService {
     global: {
       headers: {
         "Content-Type": 'application/json;',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://quiencompra.netlify.app/',
         'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
-
+        'Access-Control-Allow-Methods': 'POST, GET, PUT',
       },
     }
   }
@@ -66,11 +66,11 @@ export class ApiService {
     }
     console.log(personas)
 
-    const asd = new Response(JSON.stringify(personas), {
-      headers: { ...this.corsHeaders, 'Content-Type': 'application/json' },
-      status: 200,
-    });
-    console.log(asd)
+    // const asd = new Response(JSON.stringify(personas), {
+    //   headers: { ...this.corsHeaders, 'Content-Type': 'application/json' },
+    //   status: 200,
+    // });
+    // console.log(asd)
     return { personas, error };
   }
 
