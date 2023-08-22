@@ -24,8 +24,8 @@ export class ApiService {
       headers: {
         "Content-Type": 'application/json;',
         'Access-Control-Allow-Origin': 'https://quiencompra.netlify.app/',
-        'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
-        'Access-Control-Allow-Methods': 'POST, GET, PUT',
+        'Access-Control-Allow-Headers': 'Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization',
+        'Access-Control-Allow-Methods': 'POST, PUT, PATCH, GET, DELETE, OPTIONS',
       },
     }
   }
